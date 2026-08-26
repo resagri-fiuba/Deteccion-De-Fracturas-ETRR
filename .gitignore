@@ -1,0 +1,27 @@
+# --- Datos y modelos: NUNCA van al repositorio ---
+# Los datasets pesan cientos de MB y GitHub los rechaza.
+# El repo guarda el CODIGO que los genera, no los archivos.
+datos/*
+!datos/.gitkeep
+modelos/*
+!modelos/.gitkeep
+salidas/*
+!salidas/.gitkeep
+*.zip
+*.pt
+*.pth
+*.onnx
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# --- Sistema ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

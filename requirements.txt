@@ -1,0 +1,24 @@
+# Semana 1 - exploracion de datos
+# En Colab casi todo esto ya viene instalado.
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8
+pillow>=10.0
+opencv-python-headless>=4.9
+tqdm>=4.66
+requests>=2.31
+
+# Semana 2-4 - clasificacion
+scikit-learn>=1.4
+torch>=2.2
+torchvision>=0.17
+timm>=1.0
+
+# Semana 5-6 - deteccion  (OJO: licencia AGPL-3.0, ver LICENSE)
+# ultralytics>=8.3
+
+# Semana 7 - explicabilidad
+# grad-cam>=1.5
+
+# Semana 8 - demo
+# gradio>=4.44
