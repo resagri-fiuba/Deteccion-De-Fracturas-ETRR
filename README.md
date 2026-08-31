@@ -76,7 +76,7 @@ import torch; print(torch.cuda.is_available())   # tiene que decir True
 │   ├── config.py       Rutas, semilla, descargo. Un solo lugar para todo.
 │   ├── datos.py        Descargar FracAtlas y armar la tabla de imágenes.
 │   └── visual.py       Grillas de radiografías e histogramas.
-├── docs/               Bitácora, fichas y decisiones. Esto SÍ se versiona.
+├── docs/               Bitácora, fichas, chuleta de Git. Esto SÍ se versiona.
 ├── datos/              Datasets descargados. Ignorado por git (pesa demasiado).
 ├── modelos/            Pesos entrenados. Ignorado por git.
 └── salidas/            Gráficos e informes generados. Ignorado por git.
