@@ -8,7 +8,7 @@ opencv-python-headless>=4.9
 tqdm>=4.66
 requests>=2.31
 
-# Semana 2-4 - clasificacion
+# Curso + Semana 2-4 - clasificacion
 scikit-learn>=1.4
 torch>=2.2
 torchvision>=0.17

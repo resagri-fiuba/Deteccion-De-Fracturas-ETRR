@@ -70,12 +70,16 @@ import torch; print(torch.cuda.is_available())   # tiene que decir True
 ## Estructura
 
 ```
+├── curso/              Material de enseñanza. Mismo problema, datos livianos.
+│   ├── 01_datos_y_metricas.ipynb
+│   └── 02_redes_neuronales.ipynb
 ├── notebooks/          Un notebook por etapa. Son el hilo narrativo del proyecto.
 │   └── 01_exploracion.ipynb
 ├── src/                El código de verdad. Los notebooks solo lo llaman.
 │   ├── config.py       Rutas, semilla, descargo. Un solo lugar para todo.
 │   ├── datos.py        Descargar FracAtlas y armar la tabla de imágenes.
-│   └── visual.py       Grillas de radiografías e histogramas.
+│   ├── visual.py       Grillas de radiografías e histogramas.
+│   └── curso.py        Apoyo de los notebooks del curso (CIFAR-10, métricas, entrenamiento).
 ├── docs/               Bitácora, fichas, chuleta de Git. Esto SÍ se versiona.
 ├── datos/              Datasets descargados. Ignorado por git (pesa demasiado).
 ├── modelos/            Pesos entrenados. Ignorado por git.
@@ -87,6 +91,21 @@ modelos, nunca los datos y los modelos. Si borrás `datos/` y `modelos/`, todo
 se puede reconstruir corriendo los notebooks en orden.
 
 ---
+
+## El curso
+
+Antes de tocar radiografías conviene hacer `curso/`. Son dos notebooks que resuelven
+**el mismo problema con gatos**: CIFAR-10 tiene 10% de gatos, FracAtlas tiene 17,6% de
+fracturas. Misma estructura, datos que pesan poco y entrenan en segundos.
+
+| Notebook | Enseña |
+|---|---|
+| `curso/01_datos_y_metricas.ipynb` | Levantar datos, partición train/val/test, por qué la accuracy miente, matriz de confusión, precisión y recall, elegir el umbral |
+| `curso/02_redes_neuronales.ipynb` | El bucle de entrenamiento a mano, red densa, red convolucional, transfer learning, comparación de los cuatro modelos |
+
+En `curso/` el código está a la vista dentro del notebook a propósito: ahí lo que se
+mira ES lo que hay que aprender. En `notebooks/` la lógica vive en `src/`, como
+corresponde a un proyecto de verdad.
 
 ## Datos
 
